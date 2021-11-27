@@ -16,10 +16,7 @@ export const NewsList = () => {
 
   useEffect(() => {
     preload(countryCode);
-  }, []);
-  useEffect(() => {
-    preload(countryCode);
-  }, [countryCode]);
+  });
 
   return (
     <StyledComponent.News>
