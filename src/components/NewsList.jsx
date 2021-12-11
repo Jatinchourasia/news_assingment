@@ -10,6 +10,7 @@ export const NewsList = () => {
 
   const preload = (country) => {
     getLatestNews(country).then((data) => {
+      console.log(data);
       setNews(data.articles);
     });
   };
